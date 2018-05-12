@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <com.loften.animationsample.MyRelativeLayout
+        android:id="@+id/rl_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_larger" />
+
+        <RelativeLayout
+            android:id="@+id/rl_login"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/tv_title"
+            android:background="@android:color/white">
+
+            <View
+                android:id="@+id/v_center"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/tv_login_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="@dimen/spacing_huge"
+                android:text="知人者智  自知者明"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/font_largest"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/img_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/bt_register"
+                android:layout_alignRight="@id/bt_register"
+                android:layout_below="@+id/tv_login_title"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:layout_toRightOf="@+id/v_center"
+                android:src="@drawable/dialog_box" />
+
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_dialog"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:layout_marginLeft="@dimen/spacing_small"
+                android:layout_marginRight="@dimen/spacing_small"
+                android:layout_toLeftOf="@+id/v_center"
+                android:background="@color/colorAccent"
+                android:text="@string/login"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/bt_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_dialog"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                android:layout_marginLeft="@dimen/spacing_small"
+                android:layout_marginRight="@dimen/spacing_small"
+                android:layout_toRightOf="@+id/v_center"
+                android:background="@color/colorAccent"
+                android:text="@string/register"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:id="@+id/sv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="48dp"
+            android:background="@android:color/holo_blue_light">
+
+
+            <LinearLayout
+                android:id="@+id/rl_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bt_other"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/spacing_huge"
+                    android:background="@drawable/btn_bg"/>
+
+                <Button
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="onMyClick"
+                    android:layout_marginTop="@dimen/spacing_huge"
+                    android:background="@drawable/btn_bg"/>
+                <Button
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="onMyClick"
+                    android:layout_marginTop="@dimen/spacing_huge"
+                    android:background="@drawable/btn_bg"/>
+
+                <Button
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="onMyClick"
+                    android:layout_marginTop="@dimen/spacing_huge"
+                    android:background="@drawable/btn_bg"/>
+
+                <Button
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="onMyClick"
+                    android:layout_marginTop="@dimen/spacing_huge"
+                    android:background="@drawable/btn_bg"/>
+
+                <Button
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="onMyClick"
+                    android:layout_marginTop="@dimen/spacing_huge"
+                    android:background="@drawable/btn_bg"/>
+
+                <Button
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="onMyClick"
+                    android:layout_marginTop="@dimen/spacing_huge"
+                    android:background="@drawable/btn_bg"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </com.loften.animationsample.MyRelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_normal"
+        android:src="@drawable/head" />
+
+</FrameLayout>
